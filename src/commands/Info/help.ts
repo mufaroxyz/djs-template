@@ -1,5 +1,5 @@
 import { EmbedBuilder } from "discord.js";
-import { Command } from "../../extensions/Command";
+import { Command } from "../../extensions";
 
 export default new Command({
     name: "help",

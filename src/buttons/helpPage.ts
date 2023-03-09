@@ -1,4 +1,4 @@
-import { Button } from "../extensions/Button";
+import { Button } from "../extensions";
 import { EmbedBuilder } from "discord.js";
 
 export default new Button({

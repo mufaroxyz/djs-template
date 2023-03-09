@@ -1,4 +1,4 @@
-import { Button } from "../extensions/Button";
+import { Button } from "../extensions";
 
 export default new Button({
     custom_id: "example", // prefix of the button, arguments can be passed separated by a "-"

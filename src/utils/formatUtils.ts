@@ -1,6 +1,10 @@
+// https://github.com/KevinNovak/Discord-Bot-TypeScript-Template
+
 import { ApplicationCommand, Guild, Locale } from 'discord.js';
 import { filesize } from 'filesize';
 import { Duration } from 'luxon';
+
+
 
 export class FormatUtils {
     public static roleMention(guild: Guild, discordId: string): string {

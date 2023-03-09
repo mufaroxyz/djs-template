@@ -1,6 +1,5 @@
 import { ButtonBuilder, ButtonStyle } from "discord.js";
-import { Command } from "../../extensions/Command";
-import { ButtonActionRowBuilder } from "../../extensions/ActionRowBuilder";
+import { Command, ButtonActionRowBuilder } from "../../extensions";
 
 export default new Command({
     name: "example",
