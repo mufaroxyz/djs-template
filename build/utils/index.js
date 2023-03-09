@@ -1,2 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:true});function _export(target,all){for(var name in all)Object.defineProperty(target,name,{enumerable:true,get:all[name]})}_export(exports,{RegexUtils:()=>_regexUtils.RegexUtils,ClientUtils:()=>_clientUtils.ClientUtils,PermissionUtils:()=>_permissionUtils.PermissionUtils});const _regexUtils=require("./regexUtils");const _clientUtils=require("./clientUtils");const _permissionUtils=require("./permissionUtils");
-//# sourceMappingURL=index.js.map
