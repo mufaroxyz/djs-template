@@ -1,0 +1,2 @@
+Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"default",{enumerable:true,get:()=>_default});const _event=require("../extensions/Event");const _default=new _event.Event("messageCreate",async message=>{console.log(message.content)});
+//# sourceMappingURL=messageCreate.js.map

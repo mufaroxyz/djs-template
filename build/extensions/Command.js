@@ -1,0 +1,2 @@
+Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"Command",{enumerable:true,get:()=>Command});class Command{constructor(commandOptions){Object.assign(this,commandOptions)}}
+//# sourceMappingURL=Command.js.map

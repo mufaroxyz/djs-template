@@ -1,0 +1,2 @@
+Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"MufaroClient",{enumerable:true,get:()=>_mufaroClient.MufaroClient});const _mufaroClient=require("./mufaroClient");
+//# sourceMappingURL=index.js.map

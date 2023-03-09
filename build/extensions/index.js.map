@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/extensions/index.ts"],"sourcesContent":["export { MufaroClient } from './mufaroClient';"],"names":["MufaroClient"],"mappings":"uFAASA,wCAAAA,0BAAY,+BAAQ"}
