@@ -113,7 +113,7 @@ export class MufaroClient extends Client {
     }
 
     async eventController() {
-        const eventFiles = await globPromise(`${__dirname}/../handlers/events/*{.ts,.js}`);
+        const eventFiles = await globPromise(`${__dirname}/../events/*{.ts,.js}`);
         eventFiles.forEach(async filePath => {
             const event: Event<keyof ClientEvents> = await this.importFile(filePath);
             this.on(event.event, event.run);
