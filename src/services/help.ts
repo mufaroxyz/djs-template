@@ -1,7 +1,7 @@
-import axios from "axios";
-import { MufaroClient } from "../extensions";
-import { ButtonActionRowBuilder } from "../extensions/ActionRowBuilder";
-import { ButtonBuilder,ButtonStyle } from "discord.js";
+import axios from 'axios';
+import { MufaroClient } from '../extensions';
+import { ButtonActionRowBuilder } from '../customStructures/ActionRowBuilder';
+import { ButtonBuilder, ButtonStyle } from 'discord.js';
 
 interface CommandData {
     name: string;
@@ -46,11 +46,11 @@ export class HelpService {
                     });
                 }
             });
-        
+
         let counter = 0;
         let page = 0;
 
-        for(const command of commandChunks) {
+        for (const command of commandChunks) {
             if (counter == 0) {
                 cache.push({
                     page,
@@ -70,14 +70,20 @@ export class HelpService {
         for (const page of cache) {
             this.helpPages.set(page.page, []);
             for (const command of page.command) {
-                this.helpPages.get(page.page)?.push({ name: command.name, commandId: command.commandId, description: command.description });
+                this.helpPages
+                    .get(page.page)
+                    ?.push({
+                        name: command.name,
+                        commandId: command.commandId,
+                        description: command.description,
+                    });
             }
         }
     }
 
     public renderPage(page: number) {
         const commands = this.getHelpPage(page);
-        let output = "";
+        let output = '';
         for (const command of commands) {
             output += `> </${command.name}:${command.commandId}> - ${command.description}\n`;
         }
@@ -90,13 +96,13 @@ export class HelpService {
         actionRow.addComponents([
             new ButtonBuilder()
                 .setCustomId(`helpChangePage-previous-${page}`)
-                .setLabel("Previous")
+                .setLabel('Previous')
                 .setStyle(ButtonStyle.Primary)
                 .setDisabled(page == 0),
-                
+
             new ButtonBuilder()
                 .setCustomId(`helpChangePage-next-${page}`)
-                .setLabel("Next")
+                .setLabel('Next')
                 .setStyle(ButtonStyle.Primary)
                 .setDisabled(page == maxPage),
         ]);
