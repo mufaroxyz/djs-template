@@ -1,2 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"Event",{enumerable:true,get:()=>Event});class Event{constructor(event,run){this.event=event;this.run=run}}
-//# sourceMappingURL=Event.js.map
