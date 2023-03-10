@@ -1,2 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"BaseManager",{enumerable:true,get:()=>BaseManager});const _logs=_interopRequireDefault(require("../services/logs"));function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj}}class BaseManager{constructor(c){this.c=c}async init(){_logs.default.customLog("BaseManager initialized","BaseManager")}}
-//# sourceMappingURL=BaseManager.js.map
