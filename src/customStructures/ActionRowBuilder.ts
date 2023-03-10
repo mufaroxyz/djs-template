@@ -1,7 +1,19 @@
-import { ActionRowBuilder, MessageActionRowComponentBuilder } from 'discord.js';
+import { TextInputBuilder } from '@discordjs/builders';
+import {
+    ActionRowBuilder,
+    MessageActionRowComponentBuilder,
+    ModalActionRowComponentBuilder,
+    RestOrArray,
+} from 'discord.js';
 
 export class ButtonActionRowBuilder extends ActionRowBuilder<MessageActionRowComponentBuilder> {
-    addComponents(components: MessageActionRowComponentBuilder[]): this {
+    addComponents(...components: RestOrArray<MessageActionRowComponentBuilder>): this {
+        return Object.assign(this, { components });
+    }
+}
+
+export class ModalActionRowBuilder extends ActionRowBuilder<ModalActionRowComponentBuilder> {
+    addComponents(...components: RestOrArray<TextInputBuilder>): this {
         return Object.assign(this, { components });
     }
 }
