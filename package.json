@@ -31,7 +31,7 @@
     "@types/ms": "^0.7.31",
     "@types/node": "^18.11.18",
     "axios": "^0.27.2",
-    "discord.js": "^14.7.1",
+    "discord.js": "^14.8.0",
     "dotenv": "^16.0.3",
     "filesize": "^10.0.6",
     "fs": "^0.0.1-security",

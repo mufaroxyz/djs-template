@@ -1,5 +1,6 @@
 import { ButtonBuilder, ButtonStyle } from 'discord.js';
 import { Command, ButtonActionRowBuilder } from '../../../extensions';
+import { SingleButtonBuilder } from '../../../customStructures/SingleButtonBuilder';
 
 export default new Command({
     name: 'example',
@@ -8,12 +9,7 @@ export default new Command({
         await interaction.reply({
             content: 'Test command',
             components: [
-                new ButtonActionRowBuilder().addComponents([
-                    new ButtonBuilder()
-                        .setCustomId(`example-${interaction.user.id}`)
-                        .setLabel('Example Button')
-                        .setStyle(ButtonStyle.Primary),
-                ]),
+                new SingleButtonBuilder().label('Test Button')
             ],
         });
     },
