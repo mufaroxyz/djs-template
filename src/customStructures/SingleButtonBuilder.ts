@@ -1,11 +1,10 @@
-import {
+import Discord, {
     ActionRowBuilder,
-    ButtonBuilder,
     ButtonStyle,
     MessageActionRowComponentBuilder,
 } from 'discord.js';
 
-export class SingleButtonBuilder extends ButtonBuilder {
+export class ButtonBuilder extends Discord.ButtonBuilder {
     constructor() {
         super();
     }
