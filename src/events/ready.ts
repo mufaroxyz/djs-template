@@ -1,5 +1,5 @@
 import { Event } from "../extensions/Event";
-import { client } from "../startBot";
+import { client } from "..";
 import { ActivityType } from "discord.js";
 
 export default new Event("ready", () => {

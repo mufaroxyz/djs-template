@@ -2,11 +2,11 @@
   "name": "djs-template",
   "version": "1.0.0",
   "description": "Discord.js v14 bot template",
-  "main": "src/startBot.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/startBot.ts",
-    "dev": "nodemon src/startBot.ts",
-    "start:prod": "node dist/startBot.js",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "start:prod": "node dist/index.js",
     "build": "swc src --out-dir build --config-file .swcrc",
     "lint": "eslint src --ext .ts"
   },

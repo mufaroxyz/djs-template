@@ -1,6 +1,6 @@
-import { ButtonBuilder, ButtonStyle } from 'discord.js';
+import { ButtonStyle } from 'discord.js';
 import { Command, ButtonActionRowBuilder } from '../../../extensions';
-import { SingleButtonBuilder } from '../../../customStructures/SingleButtonBuilder';
+import { ButtonBuilder } from '../../../customStructures/SingleButtonBuilder';
 
 export default new Command({
     name: 'example',
@@ -9,7 +9,7 @@ export default new Command({
         await interaction.reply({
             content: 'Test command',
             components: [
-                new SingleButtonBuilder().label('Test Button')
+                new ButtonBuilder().label('Test Button')
             ],
         });
     },

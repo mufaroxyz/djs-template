@@ -6,7 +6,7 @@ import {
     StringSelectMenuInteraction,
     UserSelectMenuInteraction,
 } from 'discord.js';
-import { client } from '../startBot';
+import { client } from '..';
 import { Event } from '../extensions/Event';
 import { ExtendedButtonInteraction, ExtendedInteraction } from '../constants/interactions';
 
